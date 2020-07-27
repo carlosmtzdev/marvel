@@ -5,15 +5,20 @@
 body, p, figure, ul, li {
 	margin: 0;
 	padding: 0;
-} 
+}
 
 body {
     background-color: #202020;
     color: white;
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0.5px;
 }
 
-header {
+img {
+	max-width: 100%;
+}
+
+.c-header {
 	display: none;
 }
 
@@ -145,4 +150,125 @@ header {
 
 .c-cta-btn--red {
 	background-color: #e62429;
+}
+
+
+.c-grid {
+	color: #202020;
+	background-color: white;
+	padding: 10px 20px;
+}
+
+.c-header-section{
+	padding: 5px 0;
+}
+.c-header-section__title {
+	position: relative;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 800;
+	font-size: 26px;
+	letter-spacing: 1px;
+	margin: 26px 0;
+}
+
+.c-header-section__title:before,
+.c-header-section__title:after {
+	background-color: #c6a972;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    transform: rotate(-45deg) skewX(45deg);
+    width: 20px;
+}
+
+.c-header-section__title:before {
+	left: 53px;
+	top: -8px;
+	transform-origin: left bottom;
+}
+
+.c-header-section__title:after {
+	left: -6px;
+    top: calc(100% + 3px);
+    transform-origin: right top;
+}
+
+.c-grid__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.c-grid__item {
+	width: 48%;
+	margin: 8px 0;
+}
+
+.c-grid__item__frame {
+	position: relative;
+}
+
+.c-grid__item__image {
+	overflow: hidden;
+	/* padding: 56.25%; */
+	background-color: red;
+}
+
+.c-grid__item__image img {
+	/* position: absolute; */
+	max-width: 100%;
+	display: block;
+	/* top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+}
+
+.c-grid__item__overlay	{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	fill: #151515;
+}
+
+.c-grid__item__overlay svg {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top:0;
+	right: 0;
+	margin: 2px 2px 0 0;
+}
+
+.c-grid__item__body {
+	font-size: 14px;
+	overflow: hidden;
+    position: relative;
+	line-height: 1;
+	padding-top: 10px;
+}
+
+.c-grid__item__category {
+	color: #999;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 1;
+	font-weight: bold;
+}
+.c-grid__item__description a {
+	color: #151515;
+    font-weight: 700;
+    margin: 8px 0 0;
+    padding: 0;
+    cursor: pointer;
+	display: block;
+	text-decoration: none;
+}
+
+.c-grid__item__description a:hover {
+	color: #e62429
 }
