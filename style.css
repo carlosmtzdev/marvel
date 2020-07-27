@@ -1,5 +1,4 @@
 *, :after, :before {
-	
 	box-sizing: border-box;
 }
 
@@ -18,6 +17,10 @@ header {
 	display: none;
 }
 
+.c-promo{
+	position: relative;
+}
+
 .c-promo__container{
 	display: flex;
 	justify-content: center;
@@ -32,5 +35,114 @@ header {
 
 .c-promo__logo{
 	max-height: 100%;
-	margin-left: 5px;	
+	margin-left: 5px;
+}
+
+.c-promo__link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.c-carousel__item__content {
+	margin: 0 auto;
+	padding: 30px 20px;
+}
+
+.c-carousel__item__category {
+	font-weight: 400;
+	margin-bottom: 5px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.c-carousel__item__title {
+	font-size: 26px;
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+	padding: 1rem 0;
+}
+
+.c-carousel__item__description {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+
+}
+
+.c-carousel__item__image img {
+	max-width: 100%;
+	display: block;
+}
+
+.c-carousel__tabs {
+	display: none;
+}
+
+.c-carousel__dots {
+	position: absolute;
+	top: 180px;
+	display: none;
+}
+
+.c-carousel__dots li {
+	width: 18px;
+	display: inline-block;
+	border-bottom: 3px solid #e1e1e1;
+}
+
+.c-cta-btn {
+	font-weight: 800;
+	background-color: transparent;
+	cursor: pointer;
+	text-decoration: none;
+	color:white;
+	margin: 15px 0;
+	display: inline-block;
+	position: relative;
+}
+
+.c-cta-btn:after, .c-cta-btn:before {
+	content:'';
+	display: block;
+	height: 16px;
+}
+
+.c-cta-btn:before {
+	margin-left: 16px;
+}
+
+.c-cta-btn::after {
+	margin-right: 16px;
+}
+
+.c-cta-btn__inner {
+	text-align: center;
+	padding: 0 35px;
+}
+
+.c-cta-btn__inner:before,
+.c-cta-btn__inner:after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.c-cta-btn__inner:before {
+	left: 0;
+	top: 0;
+}
+
+.c-cta-btn__inner::after {
+	bottom: 0;
+	right: 0;
+}
+
+
+.c-cta-btn--red {
+	background-color: #e62429;
 }
