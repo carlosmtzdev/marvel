@@ -1,0 +1,36 @@
+*, :after, :before {
+	
+	box-sizing: border-box;
+}
+
+body, p, figure, ul, li {
+	margin: 0;
+	padding: 0;
+} 
+
+body {
+    background-color: #202020;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+	display: none;
+}
+
+.c-promo__container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.c-promo__title {
+	display: none;
+}
+
+.c-promo__logo{
+	max-height: 100%;
+	margin-left: 5px;	
+}
