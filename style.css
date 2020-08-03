@@ -8,8 +8,6 @@ body, p, figure, ul, li {
 }
 
 body {
-    background-color: #202020;
-    color: white;
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 0.5px;
 }
@@ -24,6 +22,8 @@ img {
 
 .c-promo{
 	position: relative;
+	background-color: #151515;
+	color:white;
 }
 
 .c-promo__container{
@@ -54,6 +54,8 @@ img {
 .c-carousel__item__content {
 	margin: 0 auto;
 	padding: 30px 20px;
+	background-color: #151515;
+	color: white;
 }
 
 .c-carousel__item__category {
