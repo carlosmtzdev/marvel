@@ -346,6 +346,28 @@ img {
 .sets__cards__container {
 	display: flex;
 }
+
+.marvel-unlimited__title {
+	font-size: 14px
+}
+
+.marvel-unlimited__card__image {
+	box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
+}
+
+.marvel-unlimited__card__image img {
+	display: block;
+}
+
+.marvel-unlimited__card__footer {
+	color: #999;
+	padding-top: 5px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+
 .news {
 	background-color:white;
 	color: #202020;
