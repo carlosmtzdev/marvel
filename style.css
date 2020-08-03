@@ -147,6 +147,7 @@ a {
 	margin: 15px 0;
 	display: inline-block;
 	position: relative;
+	text-transform: uppercase;
 }
 
 .c-cta-btn:after, .c-cta-btn:before {
@@ -191,6 +192,12 @@ a {
 }
 
 
+.c-cta-btn--light {
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+}
+
 .c-grid {
 	color: #202020;
 	background-color: white;
@@ -207,6 +214,7 @@ a {
 	font-size: 26px;
 	letter-spacing: 1px;
 	margin: 26px 0;
+	text-transform: uppercase;
 }
 
 .c-header-section__title:before,
