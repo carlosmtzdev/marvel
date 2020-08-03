@@ -16,9 +16,45 @@ img {
 	max-width: 100%;
 }
 
-.c-header {
+a {
+	text-decoration: none;
+}
+
+.header {
+	/*display: none;*/
+	background-color: #202020;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.open-nav {
+	padding-left: 30px;
+	padding-right: 15px;
+}
+
+.open-nav__container {
+	fill: #fff;
+}
+
+.search {
+	padding-right: 30px;
+}
+
+.search__container {
+	fill: none;
+	stroke-width: 2px;
+	stroke-linecap: square;
+	stroke: white;
+}
+
+.nav-mobile {
 	display: none;
 }
+
 
 .c-promo{
 	position: relative;
