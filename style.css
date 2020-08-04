@@ -650,6 +650,7 @@ a {
 
 .feed__card__image img {
 	display: block;
+	width: 100%;
 }
 
 .feed__card__overlay {
