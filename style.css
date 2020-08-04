@@ -499,6 +499,18 @@ a {
 	color: #202020;
 }
 
+.news__container {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+@media (min-width: 839px) {
+	.news__container {
+		display: flex;
+	}
+
+}
+
 .rail__container {
 	padding: 0 30px;
 }
@@ -609,6 +621,14 @@ a {
 
 .rail__border-bottom svg {
 	transform: rotate(180deg);
+}
+
+@media (min-width: 839px) {
+	.feed{
+		order: -1;
+		min-width: 60%;
+		margin-right: 50px;
+	}
 }
 
 .feed__container {
