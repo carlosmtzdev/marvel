@@ -14,6 +14,7 @@ body {
 
 img {
 	max-width: 100%;
+	width: 100%;
 }
 
 a {
@@ -87,6 +88,12 @@ a {
 	bottom: 0;
 }
 
+.c-carousel__item {
+	position: relative;
+}
+
+
+
 .c-carousel__item__content {
 	margin: 0 auto;
 	padding: 30px 20px;
@@ -100,6 +107,10 @@ a {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.c-carousel__item__category .c-header-section__title {
+	font-size: 16px;
 }
 
 .c-carousel__item__title {
@@ -119,6 +130,7 @@ a {
 
 .c-carousel__item__image img {
 	max-width: 100%;
+	width: 100%;
 	display: block;
 }
 
@@ -137,6 +149,62 @@ a {
 	display: inline-block;
 	border-bottom: 3px solid #e1e1e1;
 }
+
+@media (min-width: 839px) {
+	.c-carousel__item {
+		display: none;
+		min-height: 410px;
+		max-height: 640px;
+		height: 63vh;
+	}
+
+	.c-carousel__item:first-child {
+		display: block;
+	}
+	
+	
+
+	.c-carousel__item__image:before {
+		content: "";
+		position: absolute;
+		width: 60%;
+		height: 100%;
+		background-color: red;
+		background: linear-gradient(90deg,rgba(0,0,0,.65) 0,transparent)
+	}
+
+	.c-carousel__item__image img{
+		display: none;
+	}
+
+	.c-carousel__item:first-child .c-carousel__item__image {
+		background-image: url(./img/carousel_01-dsk.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.c-carousel__item__content {
+		background-color: transparent;
+		position: relative;
+		z-index: 2;
+		top: 50%;
+		transform: translateY(-50%);
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.c-carousel__item__description {
+		width: 50%;
+	}
+
+	
+}
+
 
 .c-cta-btn {
 	font-weight: 800;
