@@ -56,13 +56,13 @@ a {
 }
 
 
-.c-promo{
+.c-promo-top{
 	position: relative;
 	background-color: #151515;
 	color:white;
 }
 
-.c-promo__container{
+.c-promo-top__container{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -70,16 +70,16 @@ a {
 	font-weight: 400;
 }
 
-.c-promo__title {
+.c-promo-top__title {
 	display: none;
 }
 
-.c-promo__logo{
+.c-promo-top__logo{
 	max-height: 100%;
 	margin-left: 5px;
 }
 
-.c-promo__link {
+.c-promo-top__link {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -90,8 +90,6 @@ a {
 .c-carousel__item {
 	position: relative;
 }
-
-
 
 .c-carousel__item__content {
 	margin: 0 auto;
@@ -161,8 +159,6 @@ a {
 		display: block;
 	}
 	
-	
-
 	.c-carousel__item__image:before {
 		content: "";
 		position: absolute;
