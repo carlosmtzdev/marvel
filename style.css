@@ -201,9 +201,7 @@ a {
 		width: 50%;
 	}
 
-	
 }
-
 
 .c-cta-btn {
 	font-weight: 800;
@@ -215,14 +213,15 @@ a {
 	display: inline-block;
 	position: relative;
 	text-transform: uppercase;
-	clip-path: polygon(0 16px, 16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);
+	/*clip-path: polygon(0 16px, 16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);*/
 }
 
-.c-cta-btn:after, .c-cta-btn:before {
+.c-cta-btn:after, 
+.c-cta-btn:before {
 	content:'';
 	display: block;
 	height: 16px;
-
+	border-style: solid;
 }
 
 .c-cta-btn:before {
@@ -236,6 +235,7 @@ a {
 .c-cta-btn__inner {
 	text-align: center;
 	padding: 0 35px;
+	line-height: 16px;
 }
 
 .c-cta-btn__inner:before,
@@ -243,6 +243,10 @@ a {
     content: "";
     display: block;
     position: absolute;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0 0 16px 16px;
+    box-sizing: border-box;
 }
 
 .c-cta-btn__inner:before {
@@ -253,18 +257,46 @@ a {
 .c-cta-btn__inner::after {
 	bottom: 0;
 	right: 0;
+	transform: rotate(180deg);
 }
 
 
-.c-cta-btn--red {
+.c-cta-btn--red:before,
+.c-cta-btn--red:after,
+.c-cta-btn--red .c-cta-btn__inner {
 	background-color: #e62429;
+	border-color: #e62429;
+}
+
+.c-cta-btn--red .c-cta-btn__inner:before,
+.c-cta-btn--red .c-cta-btn__inner:after{
+	border-color: #e62429 transparent;
 }
 
 
-.c-cta-btn--light {
-	border-width: 1px;
-	border-style: solid;
-	border-color: white;
+.c-cta-btn--light:before {
+	border-color: #fff;
+	border-width: 1px 1px 0 0;
+    right: 0;
+}
+
+.c-cta-btn--light:after {
+	border-width: 0 0 1px 1px;
+    left: 0;
+}
+
+.c-cta-btn--light .c-cta-btn__inner {
+	background-color: transparent;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    color: #fff;
+    opacity: 1;
+}
+
+.c-cta-btn--light .c-cta-btn__inner:before,
+.c-cta-btn--light .c-cta-btn__inner:after {
+	background-size: 16px 24px;
+    background-image: repeating-linear-gradient(-45deg,#fff,#fff 1px,transparent 0,transparent 16px);
 }
 
 .c-grid {
