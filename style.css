@@ -814,3 +814,45 @@ a {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
+
+.c-promo-bottom {
+	background-color: #000;
+	color: white;
+	border-top: 1px solid #151515;
+	border-bottom: 1px solid #151515;
+}
+
+.c-promo-bottom__container {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+.c-promo-bottom__content {
+	padding: 0 30px 50px;
+	position: relative;
+	text-align: center;
+}
+
+.c-promo-bottom__head {
+	margin: 20px 0;
+	color: var(--color-red);
+	text-transform: uppercase;
+	font-family: var(--font-secondary);
+	font-weight: 400;
+}
+
+.c-promo-bottom__title {
+	font-weight: 800;
+	font-size: 26px;
+
+}
+
+.c-promo-bottom__legal {
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	width: 100%;
+	padding:  0 30px;
+	text-align: center;
+	font-size: 11px;
+}
