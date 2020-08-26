@@ -856,3 +856,23 @@ a {
 	text-align: center;
 	font-size: 11px;
 }
+
+@media (min-width: 839px) {
+	.c-promo-bottom__container {
+		display: flex;
+		align-items: center;
+	}
+
+	.c-promo-bottom__background, 
+	.c-promo-bottom__content {
+		flex:1;
+	}
+
+	.c-promo-bottom__content {
+		position: relative;
+		/*padding: 50px;*/
+	}
+}
+
+
+
