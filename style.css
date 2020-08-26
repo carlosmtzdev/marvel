@@ -844,7 +844,6 @@ a {
 .c-promo-bottom__title {
 	font-weight: 800;
 	font-size: 26px;
-
 }
 
 .c-promo-bottom__legal {
@@ -876,3 +875,156 @@ a {
 
 
 
+.c-footer {
+	background-color: #151515;
+	padding: 50px 0 38px;
+	color: white;
+}
+
+.c-footer__container {
+	max-width: 1240px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.c-footer__content {
+	padding: 0 30px;
+}
+
+.c-footer__links {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #393939;
+	margin-bottom: 40px;
+	padding-bottom: 26px;
+}
+
+.c-footer__logo {
+	display:flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	flex: 0 0 100%;
+}
+
+.c-footer__logo--svg {
+	width: 35px;
+}
+
+.c-footer__primary-links {
+	flex: 1 0 50%;
+}
+
+.c-footer__primary-links ul {
+	list-style: none;
+}
+
+.c-footer__secondary-links ul {
+	list-style:none;
+}
+
+.c-footer__link {
+	margin-bottom: 25px;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.c-footer__link a{
+	color: white;
+}
+
+.c-footer__primary-links {
+	font-weight: bold;
+}
+
+.c-footer__promo-links {
+	border-bottom: 1px solid #393939;
+	padding-bottom: 26px;
+	margin-bottom: 40px;
+}
+
+.c-footer__promotion-link {
+	display: flex;
+	color: white;
+}
+
+.c-footer__promotion-info {
+	padding-left: 30px;
+}
+
+.c-footer__promotion-image-wrapper {
+	width: 80px;
+	position: relative;
+}
+
+.c-footer__promotion:first-child {
+	padding-bottom: 64px;
+}
+
+.c-footer__promotion-title {
+	font-family: var(--font-secondary)
+	font-size: 14px;
+	letter-spacing: 2px;
+	line-height: 1;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.c-footer__promotion-description{
+	color: #999;
+	font-size: 14px;
+	margin: 0;
+}
+
+.c-footer__follow {
+	border-bottom: 1px solid #393939;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+
+.c-footer__follow__title {
+	font-family: var(--font-secondary);
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+
+.c-footer__social {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}
+
+.c-footer__social__img {
+	margin-top: 10px;
+}
+
+.c-footer__social__icon {
+	fill: #999;
+	transition: fill 0.3s ease;
+}
+
+.c-footer__social__icon:hover {
+	fill: #fff;
+}
+
+.c-footer__legal__container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.c-footer__legal__link {
+	color: #999;
+	font-size: 12px;
+	line-height: 1.2em;
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+
+.c-footer__legal__text {
+	color: #999;
+	font-size: 12px;
+	line-height: 1.2em;
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
