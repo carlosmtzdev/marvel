@@ -1,0 +1,30 @@
+{
+  "name": "marvel",
+  "version": "1.0.0",
+  "description": "Replicando sitio web de marvel.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "browser-sync start --server --files \"**/*.css\" --no-open",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosMtz/marvel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosMtz/marvel/issues"
+  },
+  "homepage": "https://github.com/CarlosMtz/marvel#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@storybook/html": "^5.3.19",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.12"
+  },
+  "dependencies": {}
+}
