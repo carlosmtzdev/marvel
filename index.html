@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel.com | The Official Site for Marvel Movies, Characters, Comics, TV</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <section class="header__container">
             <div class="header__open-nav">
-                <a class="open-nav" href="#" aria-label="open navegation" >
+                <a class="open-nav js-openNav" href="#" aria-label="open navegation">
                     <span class="open-nav__container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16"><g fill-rule="evenodd"><path d="M0 14h24v2H0zM0 8h24v2H0zM0 2h24v2H0z"></path></g></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
+                            <g fill-rule="evenodd">
+                                <path d="M0 14h24v2H0zM0 8h24v2H0zM0 2h24v2H0z"></path>
+                            </g>
+                        </svg>
                     </span>
                 </a>
             </div>
 
             <div class="header-logo">
-                <a href="">
-                    <svg width="130" height="52" xmlns="http://www.w3.org/2000/svg"><rect fill="#EC1D24" width="100%" height="100%"></rect><path fill="#FEFEFE" d="M126.222 40.059v7.906H111.58V4h7.885v36.059h6.757zm-62.564-14.5c-.61.294-1.248.44-1.87.442v-14.14h.04c.622-.005 5.264.184 5.264 6.993 0 3.559-1.58 5.804-3.434 6.705zM40.55 34.24l2.183-18.799 2.265 18.799H40.55zm69.655-22.215V4.007H87.879l-3.675 26.779-3.63-26.78h-8.052l.901 7.15c-.928-1.832-4.224-7.15-11.48-7.15-.047-.002-8.06 0-8.06 0l-.031 39.032-5.868-39.031-10.545-.005-6.072 40.44.002-40.435H21.278L17.64 26.724 14.096 4.006H4v43.966h7.95V26.78l3.618 21.192h4.226l3.565-21.192v21.192h15.327l.928-6.762h6.17l.927 6.762 15.047.008h.01v-.008h.02V33.702l1.845-.27 3.817 14.55h7.784l-.002-.01h.022l-5.011-17.048c2.538-1.88 5.406-6.644 4.643-11.203v-.002C74.894 19.777 79.615 48 79.615 48l9.256-.027 6.327-39.85v39.85h15.007v-7.908h-7.124v-10.08h7.124v-8.03h-7.124v-9.931h7.124z"></path><path fill="#EC1D24" d="M0 0h30v52H0z"></path><path fill="#FEFEFE" d="M31.5 48V4H21.291l-3.64 22.735L14.102 4H4v44h8V26.792L15.577 48h4.229l3.568-21.208V48z"></path></svg>
+                <a href="#">
+                    <svg width="130" height="52" xmlns="http://www.w3.org/2000/svg">
+                        <rect fill="#EC1D24" width="100%" height="100%"></rect>
+                        <path fill="#FEFEFE"
+                            d="M126.222 40.059v7.906H111.58V4h7.885v36.059h6.757zm-62.564-14.5c-.61.294-1.248.44-1.87.442v-14.14h.04c.622-.005 5.264.184 5.264 6.993 0 3.559-1.58 5.804-3.434 6.705zM40.55 34.24l2.183-18.799 2.265 18.799H40.55zm69.655-22.215V4.007H87.879l-3.675 26.779-3.63-26.78h-8.052l.901 7.15c-.928-1.832-4.224-7.15-11.48-7.15-.047-.002-8.06 0-8.06 0l-.031 39.032-5.868-39.031-10.545-.005-6.072 40.44.002-40.435H21.278L17.64 26.724 14.096 4.006H4v43.966h7.95V26.78l3.618 21.192h4.226l3.565-21.192v21.192h15.327l.928-6.762h6.17l.927 6.762 15.047.008h.01v-.008h.02V33.702l1.845-.27 3.817 14.55h7.784l-.002-.01h.022l-5.011-17.048c2.538-1.88 5.406-6.644 4.643-11.203v-.002C74.894 19.777 79.615 48 79.615 48l9.256-.027 6.327-39.85v39.85h15.007v-7.908h-7.124v-10.08h7.124v-8.03h-7.124v-9.931h7.124z">
+                        </path>
+                        <path fill="#EC1D24" d="M0 0h30v52H0z"></path>
+                        <path fill="#FEFEFE"
+                            d="M31.5 48V4H21.291l-3.64 22.735L14.102 4H4v44h8V26.792L15.577 48h4.229l3.568-21.208V48z">
+                        </path>
+                    </svg>
                 </a>
             </div>
 
             <div class="header__search">
-                <a class="search" href="#" arial-label="search" >
+                <a class="search" href="#" arial-label="search">
                     <span class="search__container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17" fill-rule="evenodd"><circle cx="6.5" cy="6.5" r="5.5"></circle><path d="M14 14l3.536 3.536"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                            fill-rule="evenodd">
+                            <circle cx="6.5" cy="6.5" r="5.5"></circle>
+                            <path d="M14 14l3.536 3.536"></path>
+                        </svg>
                     </span>
                 </a>
             </div>
         </section>
 
-        <nav class="nav-mobile">
+        <nav class="nav-mobile js-navMobile">
             <section class="nav-mobile__container">
                 <section class="navigation__options">
 
                     <div class="menu-nav">
-                        <a href="#" class="nav-close" aria-label="close navigation">x</a>
-                        <ul>
+                        <a href="#" class="nav-close  js-closeNav" aria-label="close navigation">X</a>
+                        <ul class="menu-nav__list">
                             <li>
-                                <a href="#">Videos</a>
-    
+                                <a class="menu-nav__item" href="#">Videos</a>
+
                                 <div class="secundary-menu-nav">
                                     <a href="#">
                                         <div>Videos</div>
                                     </a>
-    
+
                                     <nav class="menu-nav__links">
                                         <ul>
                                             <li><a href="#">Trailer & extras</a></li>
@@ -55,7 +75,7 @@
                                             <li><a href="#">All video</a></li>
                                         </ul>
                                     </nav>
-    
+
                                     <div class="menu-nav__secondary">
                                         <p>Our Shows</p>
                                         <nav>
@@ -68,15 +88,15 @@
                                     </div>
                                 </div>
                             </li>
-    
+
                             <li>
-                                <a href="#">Characters</a>
-    
+                                <a class="menu-nav__item" href="#">Characters</a>
+
                                 <div class="secundary-menu-nav">
                                     <a href="#">
                                         <div>Characters</div>
                                     </a>
-    
+
                                     <nav class="menu-nav__links">
                                         <ul>
                                             <li><a href="#">All Characters</a></li>
@@ -86,15 +106,15 @@
                                     </nav>
                                 </div>
                             </li>
-                            
+
                             <li>
-                                <a href="#">Comics</a>
-    
+                                <a class="menu-nav__item" href="#">Comics</a>
+
                                 <div class="secundary-menu-nav">
                                     <a href="#">
                                         <div>Comics</div>
                                     </a>
-    
+
                                     <nav class="menu-nav__links">
                                         <ul>
                                             <li><a href="#">Release Calendar</a></li>
@@ -105,7 +125,7 @@
                                             <li><a href="#">All Comics</a></li>
                                         </ul>
                                     </nav>
-    
+
                                     <div class="menu-nav__secondary">
                                         <p>Browse By</p>
                                         <nav>
@@ -119,15 +139,15 @@
                                     </div>
                                 </div>
                             </li>
-    
+
                             <li>
-                                <a href="#">Movies</a>
-    
+                                <a class="menu-nav__item" href="#">Movies</a>
+
                                 <div class="secundary-menu-nav">
                                     <a href="#">
                                         <div>Movies</div>
                                     </a>
-    
+
                                     <nav class="menu-nav__links">
                                         <ul>
                                             <li><a href="#">Black Widow</a></li>
@@ -139,15 +159,15 @@
                                     </nav>
                                 </div>
                             </li>
-    
+
                             <li>
-                                <a href="#">TV Shows</a>
-    
+                                <a class="menu-nav__item" href="#">TV Shows</a>
+
                                 <div class="secundary-menu-nav">
                                     <a href="#">
                                         <div>TV Shows</div>
                                     </a>
-    
+
                                     <nav class="menu-nav__links">
                                         <ul>
                                             <li><a href="#">Marvel's Runaways | Season 3</a></li>
@@ -159,15 +179,15 @@
                                     </nav>
                                 </div>
                             </li>
-    
+
                             <li>
-                                <a href="#">Games</a>
-                                
+                                <a class="menu-nav__item" href="#">Games</a>
+
                                 <div class="secundary-menu-nav">
                                     <a href="#">
                                         <div>Games</div>
                                     </a>
-    
+
                                     <nav class="menu-nav__links">
                                         <ul>
                                             <li><a href="#">Marvel Ultimate Alliance 3</a></li>
@@ -178,22 +198,22 @@
                                     </nav>
                                 </div>
                             </li>
-    
+
                             <li>
-                                <a href="#">News</a>
-    
+                                <a class="menu-nav__item" href="#">News</a>
+
                                 <div class="secundary-menu-nav">
                                     <a href="#">
                                         <div>News</div>
                                     </a>
-    
+
                                     <nav class="menu-nav__links">
                                         <ul>
                                             <li><a href="#">Latest News</a></li>
                                             <li><a href="#">All News</a></li>
                                         </ul>
                                     </nav>
-                                
+
                                     <div class="menu-nav__secondary">
                                         <p>Search By</p>
                                         <nav>
@@ -210,26 +230,26 @@
                                     </div>
                                 </div>
                             </li>
-    
+
                             <li>
-                                <a href="#">Culture & Lifestyle</a>
+                                <a class="menu-nav__item" href="#">Culture & Lifestyle</a>
                             </li>
-    
+
                             <li>
-                                <a href="#">Podcast</a>
+                                <a class="menu-nav__item" href="#">Podcast</a>
                             </li>
-    
+
                             <li>
-                                <a href="#">Shop</a>
+                                <a class="menu-nav__item" href="#">Shop</a>
                             </li>
-    
+
                             <li>
-                                <a href="#">Marvel Mastercard®</a>
+                                <a class="menu-nav__item" href="#">Marvel Mastercard®</a>
                             </li>
                         </ul>
                     </div>
-    
-                    <div>
+
+                    <div class="user-menu">
                         <a href="#">
                             <div class="menu-nav__title">Marvel Insider</div>
                         </a>
@@ -240,34 +260,54 @@
                             </ul>
                         </nav>
                     </div>
-    
+
                     <div class="social">
                         <a href="#">
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path fill-rule="evenodd" d="M9.426 17.647H.974A.974.974 0 0 1 0 16.673V.974C0 .436.436 0 .974 0h15.7c.537 0 .973.436.973.974v15.699a.974.974 0 0 1-.974.974h-4.497v-6.834h2.294l.343-2.663h-2.637v-1.7c0-.772.214-1.297 1.32-1.297h1.41V2.77a18.853 18.853 0 0 0-2.055-.105c-2.033 0-3.425 1.241-3.425 3.52V8.15h-2.3v2.663h2.3v6.834z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                    <path fill-rule="evenodd"
+                                        d="M9.426 17.647H.974A.974.974 0 0 1 0 16.673V.974C0 .436.436 0 .974 0h15.7c.537 0 .973.436.973.974v15.699a.974.974 0 0 1-.974.974h-4.497v-6.834h2.294l.343-2.663h-2.637v-1.7c0-.772.214-1.297 1.32-1.297h1.41V2.77a18.853 18.853 0 0 0-2.055-.105c-2.033 0-3.425 1.241-3.425 3.52V8.15h-2.3v2.663h2.3v6.834z">
+                                    </path>
+                                </svg>
                             </span>
                         </a>
                         <a href="#">
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15"><path fill-rule="evenodd" d="M17.647 1.74a7.072 7.072 0 0 1-2.079.585A3.704 3.704 0 0 0 17.16.272a7.13 7.13 0 0 1-2.3.9A3.57 3.57 0 0 0 12.217 0C10.22 0 8.598 1.662 8.598 3.712c0 .291.031.574.093.846-3.009-.155-5.676-1.632-7.463-3.88a3.78 3.78 0 0 0-.49 1.868c0 1.287.64 2.424 1.611 3.09a3.555 3.555 0 0 1-1.64-.463v.045c0 1.8 1.248 3.3 2.905 3.64-.304.088-.624.131-.954.131-.233 0-.461-.022-.682-.066.461 1.475 1.798 2.549 3.382 2.577A7.149 7.149 0 0 1 0 13.04a10.08 10.08 0 0 0 5.55 1.666c6.66 0 10.3-5.656 10.3-10.562 0-.162-.002-.323-.008-.482a7.43 7.43 0 0 0 1.805-1.921"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15">
+                                    <path fill-rule="evenodd"
+                                        d="M17.647 1.74a7.072 7.072 0 0 1-2.079.585A3.704 3.704 0 0 0 17.16.272a7.13 7.13 0 0 1-2.3.9A3.57 3.57 0 0 0 12.217 0C10.22 0 8.598 1.662 8.598 3.712c0 .291.031.574.093.846-3.009-.155-5.676-1.632-7.463-3.88a3.78 3.78 0 0 0-.49 1.868c0 1.287.64 2.424 1.611 3.09a3.555 3.555 0 0 1-1.64-.463v.045c0 1.8 1.248 3.3 2.905 3.64-.304.088-.624.131-.954.131-.233 0-.461-.022-.682-.066.461 1.475 1.798 2.549 3.382 2.577A7.149 7.149 0 0 1 0 13.04a10.08 10.08 0 0 0 5.55 1.666c6.66 0 10.3-5.656 10.3-10.562 0-.162-.002-.323-.008-.482a7.43 7.43 0 0 0 1.805-1.921">
+                                    </path>
+                                </svg>
                             </span>
                         </a>
                         <a href="#">
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path fill-rule="evenodd" d="M15.441 15.993H2.206a.552.552 0 0 1-.552-.552V7.17H3.86c-.287.414-.384 1.185-.384 1.675 0 2.953 2.408 5.356 5.368 5.356 2.96 0 5.368-2.403 5.368-5.356 0-.49-.069-1.25-.425-1.675h2.206v8.272a.552.552 0 0 1-.552.552M8.844 5.458a3.39 3.39 0 0 1 3.394 3.386 3.39 3.39 0 0 1-3.394 3.386A3.39 3.39 0 0 1 5.45 8.844a3.39 3.39 0 0 1 3.393-3.386m4.391-3.252h1.655c.304 0 .551.247.551.551v1.655a.552.552 0 0 1-.551.551h-1.655a.552.552 0 0 1-.551-.551V2.757c0-.304.247-.551.551-.551M15.55 0H2.098A2.095 2.095 0 0 0 0 2.093v13.461c0 1.156.94 2.093 2.098 2.093h13.451a2.095 2.095 0 0 0 2.098-2.093V2.093C17.647.937 16.707 0 15.549 0"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                    <path fill-rule="evenodd"
+                                        d="M15.441 15.993H2.206a.552.552 0 0 1-.552-.552V7.17H3.86c-.287.414-.384 1.185-.384 1.675 0 2.953 2.408 5.356 5.368 5.356 2.96 0 5.368-2.403 5.368-5.356 0-.49-.069-1.25-.425-1.675h2.206v8.272a.552.552 0 0 1-.552.552M8.844 5.458a3.39 3.39 0 0 1 3.394 3.386 3.39 3.39 0 0 1-3.394 3.386A3.39 3.39 0 0 1 5.45 8.844a3.39 3.39 0 0 1 3.393-3.386m4.391-3.252h1.655c.304 0 .551.247.551.551v1.655a.552.552 0 0 1-.551.551h-1.655a.552.552 0 0 1-.551-.551V2.757c0-.304.247-.551.551-.551M15.55 0H2.098A2.095 2.095 0 0 0 0 2.093v13.461c0 1.156.94 2.093 2.098 2.093h13.451a2.095 2.095 0 0 0 2.098-2.093V2.093C17.647.937 16.707 0 15.549 0">
+                                    </path>
+                                </svg>
                             </span>
                         </a>
                         <a href="#">
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18"><path fill-rule="evenodd" d="M8.535 14.5c-1.532.038-1.83-1-1.842-1.751V7.217h3.844v-2.69h-3.83V0H3.904a.147.147 0 0 0-.138.133C3.602 1.518 2.904 3.949 0 4.922v2.295h1.937v5.806c0 1.988 1.58 4.812 5.749 4.745 1.407-.022 2.969-.569 3.314-1.04l-.92-2.535c-.356.158-1.037.295-1.545.307z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18">
+                                    <path fill-rule="evenodd"
+                                        d="M8.535 14.5c-1.532.038-1.83-1-1.842-1.751V7.217h3.844v-2.69h-3.83V0H3.904a.147.147 0 0 0-.138.133C3.602 1.518 2.904 3.949 0 4.922v2.295h1.937v5.806c0 1.988 1.58 4.812 5.749 4.745 1.407-.022 2.969-.569 3.314-1.04l-.92-2.535c-.356.158-1.037.295-1.545.307z">
+                                    </path>
+                                </svg>
                             </span>
                         </a>
                         <a href="#">
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15"><path fill-rule="evenodd" d="M8.109 9.73l-.001-5.679 5.522 2.85-5.521 2.83zm12.124-6.663s-.2-1.393-.812-2.006c-.778-.806-1.649-.81-2.048-.856C14.513 0 10.223 0 10.223 0h-.009s-4.29 0-7.15.205c-.4.046-1.27.05-2.048.856-.612.613-.812 2.006-.812 2.006S0 4.703 0 6.338v1.534c0 1.636.204 3.272.204 3.272s.2 1.392.812 2.006c.778.805 1.8.78 2.254.864 1.635.155 6.949.203 6.949.203s4.294-.006 7.154-.21c.4-.048 1.27-.052 2.048-.857.612-.614.812-2.006.812-2.006s.204-1.636.204-3.272V6.338c0-1.635-.204-3.271-.204-3.271z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15">
+                                    <path fill-rule="evenodd"
+                                        d="M8.109 9.73l-.001-5.679 5.522 2.85-5.521 2.83zm12.124-6.663s-.2-1.393-.812-2.006c-.778-.806-1.649-.81-2.048-.856C14.513 0 10.223 0 10.223 0h-.009s-4.29 0-7.15.205c-.4.046-1.27.05-2.048.856-.612.613-.812 2.006-.812 2.006S0 4.703 0 6.338v1.534c0 1.636.204 3.272.204 3.272s.2 1.392.812 2.006c.778.805 1.8.78 2.254.864 1.635.155 6.949.203 6.949.203s4.294-.006 7.154-.21c.4-.048 1.27-.052 2.048-.857.612-.614.812-2.006.812-2.006s.204-1.636.204-3.272V6.338c0-1.635-.204-3.271-.204-3.271z">
+                                    </path>
+                                </svg>
                             </span>
                         </a>
-    
+
                     </div>
 
                     <div class="promo">
@@ -288,7 +328,8 @@
                             <a href="">
                                 <div>
                                     <figure>
-                                        <img src="img/marvel_mastercard_promo-268x118_0-nav-flyout-v4.png" srcset="img/marvel_mastercard_promo-268x118_0-nav-flyout-v4.png" alt="">
+                                        <img src="img/marvel_mastercard_promo-268x118_0-nav-flyout-v4.png"
+                                            srcset="img/marvel_mastercard_promo-268x118_0-nav-flyout-v4.png" alt="">
                                     </figure>
                                 </div>
                                 <div>
@@ -305,6 +346,20 @@
             </section>
         </nav>
 
+        <nav class="nav-desktop">
+            <ul class="nav-desktop__list">
+                <li class="nav-desktop__item"><a class="nav-desktop__link" href="#">Videos</a></li>
+                <li class="nav-desktop__item"><a class="nav-desktop__link" href="#">Characters</a></li>
+                <li class="nav-desktop__item"><a class="nav-desktop__link" href="#">Comics</a></li>
+                <li class="nav-desktop__item"><a class="nav-desktop__link" href="#">Movies</a></li>
+                <li class="nav-desktop__item"><a class="nav-desktop__link" href="#">Tv Shows</a></li>
+                <li class="nav-desktop__item"><a class="nav-desktop__link" href="#">Games</a></li>
+                <li class="nav-desktop__item"><a class="nav-desktop__link" href="#">News</a></li>
+                <li class="nav-desktop__item"><a class="nav-desktop__link" href="#">More</a></li>
+            </ul>
+
+        </nav>
+
     </header>
 
     <main>
@@ -314,9 +369,9 @@
                 <p class="c-promo-top__title">MARVEL MOVIES & SERIES STREAMING ANYTIME ON</p>
                 <p class="c-promo-top__description">START STREAMING NOW</p>
                 <figure class="c-promo-top__logo">
-                   <img src="img/disneyplus-white.png" alt="">
+                    <img src="img/disneyplus-white.png" alt="">
                 </figure>
-                <a class="c-promo-top__link" href="https://www.disneyplus.com/welcome?cid=DTCI-Synergy-Marvel-Site-Acquisition-USLaunch-US-Marvel-NA-EN-NavPipe-StartStreamingNowCTA-NA" class="promo__content__btn">&nbsp;</a>
+                <a class="c-promo-top__link" href="#" class="promo__content__btn">&nbsp;</a>
             </div>
         </section>
 
@@ -334,9 +389,10 @@
                             </div>
                             <h3 class="c-carousel__item__title">Marvel Studios in Hall H</h3>
                             <p class="c-carousel__item__description">
-                                We take a look back at some of the best Marvel Studios moments from Comic-Con—in Hall H and beyond!
+                                We take a look back at some of the best Marvel Studios moments from Comic-Con—in Hall H
+                                and beyond!
                             </p>
-                            <a class="c-carousel__item__cta  c-cta-btn  c-cta-btn--red" href="/articles/culture-lifestyle/san-diego-comic-con-look-back-mcu-2020">
+                            <a class="c-carousel__item__cta  c-cta-btn  c-cta-btn--red" href="#">
                                 <div class="c-cta-btn__inner">
                                     <span>LOOK BACK</span>
                                 </div>
@@ -353,7 +409,7 @@
                             <p class="c-carousel__item__description">
                                 Watch our panel from Comic-Con@Home talking about the massive new comics coming up!
                             </p>
-                            <a class="c-carousel__item__cta  c-cta-btn  c-cta-btn--red" href="/articles/culture-lifestyle/san-diego-comic-con-look-back-mcu-2020">
+                            <a class="c-carousel__item__cta  c-cta-btn  c-cta-btn--red" href="#">
                                 <div class="c-cta-btn__inner">
                                     WATCH NOW
                                 </div>
@@ -368,9 +424,10 @@
                             <div class="c-carousel__item__category">Marvel's Storyboards</div>
                             <h3 class="c-carousel__item__title">Hugh Jackman Talks Wolverine</h3>
                             <p class="c-carousel__item__description">
-                                Hugh Jackman joins Joe Quesada for the first episode of Marvel's Storyboards to talk about his Wolverine journey!
+                                Hugh Jackman joins Joe Quesada for the first episode of Marvel's Storyboards to talk
+                                about his Wolverine journey!
                             </p>
-                            <a class="c-carousel__item__cta  c-cta-btn  c-cta-btn--red" href="/articles/culture-lifestyle/san-diego-comic-con-look-back-mcu-2020">
+                            <a class="c-carousel__item__cta  c-cta-btn  c-cta-btn--red" href="#">
                                 <div class="c-cta-btn__inner">
                                     WATCH NOW
                                 </div>
@@ -389,7 +446,7 @@
                             <p class="c-carousel__item__description">
                                 The team tries to break out of a time loop tonight!
                             </p>
-                            <a class="c-carousel__item__cta  c-cta-btn  c-cta-btn--red" href="/articles/culture-lifestyle/san-diego-comic-con-look-back-mcu-2020">
+                            <a class="c-carousel__item__cta  c-cta-btn  c-cta-btn--red" href="#">
                                 <div class="c-cta-btn__inner">
                                     LEARN MORE
                                 </div>
@@ -408,7 +465,7 @@
                             <p class="c-carousel__item__description">
                                 We take a journey through all of Cap's costumes in the MCU!
                             </p>
-                            <a class="c-carousel__item__cta  c-cta-btn  c-cta-btn--red" href="/articles/culture-lifestyle/san-diego-comic-con-look-back-mcu-2020">
+                            <a class="c-carousel__item__cta  c-cta-btn  c-cta-btn--red" href="#">
                                 <div class="c-cta-btn__inner">
                                     WATCH
                                 </div>
@@ -444,7 +501,7 @@
                 <header class="c-header-section">
                     <h3 class="c-header-section__title">MARVEL AT HOME</h3>
                 </header>
-                
+
                 <div class="c-grid__items">
 
                     <div class="c-grid__item">
@@ -453,7 +510,39 @@
                                 <img src="img/marve-at-home-01.jpg" alt="">
                             </figure>
                             <a class="c-grid__item__overlay" href="#">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463 463"><defs><style>.cls-1{opacity:.4}.cls-2{fill:#fff}.cls-3{fill:#e8b63e}.cls-4{fill:#202020}</style></defs><title>Artboard 1</title><g class="cls-1"><circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle><path class="cls-3" d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z"></path></g><circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle><path class="cls-4" d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z"></path></svg>
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 463 463">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                opacity: .4
+                                            }
+
+                                            .cls-2 {
+                                                fill: #fff
+                                            }
+
+                                            .cls-3 {
+                                                fill: #e8b63e
+                                            }
+
+                                            .cls-4 {
+                                                fill: #202020
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>Artboard 1</title>
+                                    <g class="cls-1">
+                                        <circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle>
+                                        <path class="cls-3"
+                                            d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z">
+                                        </path>
+                                    </g>
+                                    <circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle>
+                                    <path class="cls-4"
+                                        d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z">
+                                    </path>
+                                </svg>
                             </a>
                         </div>
                         <div class="c-grid__item__body">
@@ -471,7 +560,39 @@
                                 <img src="img/marve-at-home-02.jpg" alt="">
                             </figure>
                             <a class="c-grid__item__overlay" href="#">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463 463"><defs><style>.cls-1{opacity:.4}.cls-2{fill:#fff}.cls-3{fill:#e8b63e}.cls-4{fill:#202020}</style></defs><title>Artboard 1</title><g class="cls-1"><circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle><path class="cls-3" d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z"></path></g><circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle><path class="cls-4" d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z"></path></svg>
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 463 463">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                opacity: .4
+                                            }
+
+                                            .cls-2 {
+                                                fill: #fff
+                                            }
+
+                                            .cls-3 {
+                                                fill: #e8b63e
+                                            }
+
+                                            .cls-4 {
+                                                fill: #202020
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>Artboard 1</title>
+                                    <g class="cls-1">
+                                        <circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle>
+                                        <path class="cls-3"
+                                            d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z">
+                                        </path>
+                                    </g>
+                                    <circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle>
+                                    <path class="cls-4"
+                                        d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z">
+                                    </path>
+                                </svg>
                             </a>
                         </div>
                         <div class="c-grid__item__body">
@@ -490,7 +611,39 @@
                                 <img src="img/marve-at-home-03.jpg" alt="">
                             </figure>
                             <a class="c-grid__item__overlay" href="#">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463 463"><defs><style>.cls-1{opacity:.4}.cls-2{fill:#fff}.cls-3{fill:#e8b63e}.cls-4{fill:#202020}</style></defs><title>Artboard 1</title><g class="cls-1"><circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle><path class="cls-3" d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z"></path></g><circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle><path class="cls-4" d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z"></path></svg>
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 463 463">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                opacity: .4
+                                            }
+
+                                            .cls-2 {
+                                                fill: #fff
+                                            }
+
+                                            .cls-3 {
+                                                fill: #e8b63e
+                                            }
+
+                                            .cls-4 {
+                                                fill: #202020
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>Artboard 1</title>
+                                    <g class="cls-1">
+                                        <circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle>
+                                        <path class="cls-3"
+                                            d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z">
+                                        </path>
+                                    </g>
+                                    <circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle>
+                                    <path class="cls-4"
+                                        d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z">
+                                    </path>
+                                </svg>
                             </a>
                         </div>
                         <div class="c-grid__item__body">
@@ -509,7 +662,39 @@
                                 <img src="img/marve-at-home-04.jpg" alt="">
                             </figure>
                             <a class="c-grid__item__overlay" href="#">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463 463"><defs><style>.cls-1{opacity:.4}.cls-2{fill:#fff}.cls-3{fill:#e8b63e}.cls-4{fill:#202020}</style></defs><title>Artboard 1</title><g class="cls-1"><circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle><path class="cls-3" d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z"></path></g><circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle><path class="cls-4" d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z"></path></svg>
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 463 463">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                opacity: .4
+                                            }
+
+                                            .cls-2 {
+                                                fill: #fff
+                                            }
+
+                                            .cls-3 {
+                                                fill: #e8b63e
+                                            }
+
+                                            .cls-4 {
+                                                fill: #202020
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>Artboard 1</title>
+                                    <g class="cls-1">
+                                        <circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle>
+                                        <path class="cls-3"
+                                            d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z">
+                                        </path>
+                                    </g>
+                                    <circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle>
+                                    <path class="cls-4"
+                                        d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z">
+                                    </path>
+                                </svg>
                             </a>
                         </div>
                         <div class="c-grid__item__body">
@@ -525,12 +710,13 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="digital-comic sets">
             <div class="sets__hero">
                 <div class="sets__background">
                     <figure class="sets__background__container">
-                        <div class="sets__background__image" style="background-image: url('./img/digital-comic-background.jpg');">                        
+                        <div class="sets__background__image"
+                            style="background-image: url('./img/digital-comic-background.jpg');">
                         </div>
                     </figure>
                 </div>
@@ -541,7 +727,8 @@
                         </figure>
                         <div class="sets__title">Free Digital Comics</div>
                         <div class="sets__description">
-                            Marvel Unlimited is offering free access to some of the most iconic Marvel comics stories by black creators and storytellers.
+                            Marvel Unlimited is offering free access to some of the most iconic Marvel comics stories by
+                            black creators and storytellers.
                         </div>
                         <a class="c-cta-btn c-cta-btn--light" href="#" class="sets__cta">
                             <div class="c-cta-btn__inner">
@@ -551,7 +738,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="sets__cards">
                 <div class="sets__cards__container">
 
@@ -567,7 +754,8 @@
                             <img src="img/digital-comics-02.jpg" alt="">
                         </figure>
                         <p class="sets__card__category">Podcasts</p>
-                        <div class="sets__card__title">The '2020 Ironheart' writers team up with 'Marvel's Pull List' to revisit a modern classic!</div>
+                        <div class="sets__card__title">The '2020 Ironheart' writers team up with 'Marvel's Pull List' to
+                            revisit a modern classic!</div>
                     </div>
                     <div class="sets__card__item">
                         <figure class="sets__card__image">
@@ -588,7 +776,8 @@
                             <img src="img/digital-comics-05.jpg" alt="">
                         </figure>
                         <p class="sets__card__category">Culture & Lifestyle</p>
-                        <div class="sets__card__title">The man who told the stories of Black Panther, Spider-Man, and more was today's guest on Joe Q's Mornin' Warm Up!</div>
+                        <div class="sets__card__title">The man who told the stories of Black Panther, Spider-Man, and
+                            more was today's guest on Joe Q's Mornin' Warm Up!</div>
                     </div>
                     <div class="sets__card__item">
                         <figure class="sets__card__image">
@@ -599,7 +788,7 @@
                     </div>
 
                 </div>
-            </div>    
+            </div>
         </section>
 
         <section class="c-grid">
@@ -607,7 +796,7 @@
                 <header class="c-header-section">
                     <h3 class="c-header-section__title">MARVEL PODCASTS</h3>
                 </header>
-                
+
                 <div class="c-grid__items">
                     <div class="c-grid__item">
                         <div class="c-grid__item__frame">
@@ -680,7 +869,8 @@
             <div class="sets__hero">
                 <div class="sets__background">
                     <figure class="sets__background__container">
-                        <div class="sets__background__image" style="background-image: url('./img/marvel-unlimited-background.jpg');">                        
+                        <div class="sets__background__image"
+                            style="background-image: url('./img/marvel-unlimited-background.jpg');">
                         </div>
                     </figure>
                 </div>
@@ -704,7 +894,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="sets__cards">
                 <div class="sets__cards__container">
 
@@ -773,18 +963,21 @@
                     </div>
 
                 </div>
-            </div>    
+            </div>
         </section>
 
         <section class="news">
             <div class="news__container">
-                
+
                 <div class="rail">
                     <div class="rail__container">
                         <div class="rail__head">
                             <div class="rail__border-top">
                                 <div class="rail__border-top__container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="186" height="55" viewBox="0 0 186 55"><path d="M21.4 1L1 21.4V717h264.6l20.4-20.4V1H21.4z" mask="url(#mask-2)"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="186" height="55"
+                                        viewBox="0 0 186 55">
+                                        <path d="M21.4 1L1 21.4V717h264.6l20.4-20.4V1H21.4z" mask="url(#mask-2)"></path>
+                                    </svg>
                                 </div>
                             </div>
                             <h3 class="rail__title">The Hype Box</h3>
@@ -818,7 +1011,8 @@
                                     <p class="rail__card__category">Digital Series</p>
                                     <p class="rail__card__title">
                                         <a href="#">
-                                            'Marvel's Agents of S.H.I.E.L.D.' Star Natalia Cordova-Buckley Is Joe Quesada's Guest on a New 'Marvel's Storyboards'
+                                            'Marvel's Agents of S.H.I.E.L.D.' Star Natalia Cordova-Buckley Is Joe
+                                            Quesada's Guest on a New 'Marvel's Storyboards'
                                         </a>
                                     </p>
                                 </div>
@@ -872,7 +1066,9 @@
 
                         <div class="rail__border-bottom">
                             <div class="rail__border-bottom__container">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="186" height="55" viewBox="0 0 186 55"><path d="M21.4 1L1 21.4V717h264.6l20.4-20.4V1H21.4z" mask="url(#mask-2)"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="186" height="55" viewBox="0 0 186 55">
+                                    <path d="M21.4 1L1 21.4V717h264.6l20.4-20.4V1H21.4z" mask="url(#mask-2)"></path>
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -982,7 +1178,8 @@
                                 <div class="feed__card__content">
                                     <p class="feed__card__category">Podcasts</p>
                                     <p class="feed__card__title">
-                                        This Week in Marvel Hits the Mat with Wrestler Xavier Woods and Artist Skottie Young
+                                        This Week in Marvel Hits the Mat with Wrestler Xavier Woods and Artist Skottie
+                                        Young
                                     </p>
                                 </div>
                                 <div class="feed__card__footer">
@@ -996,7 +1193,7 @@
                                 <div class="feed__card__content">
                                     <p class="feed__card__category">Culture & Lifestyle</p>
                                     <p class="feed__card__title">
-                                        Today You Can Swing Through the Spider-Verse All Day Long 
+                                        Today You Can Swing Through the Spider-Verse All Day Long
                                     </p>
                                 </div>
                                 <div class="feed__card__footer">
@@ -1016,6 +1213,7 @@
                     <div class="c-promo-bottom__background__container">
                         <div class="c-promo-bottom__background__image">
                             <figure>
+                                <source srcset="img/promo-dsk.jpg" media="(min-width: 839px)">
                                 <img src="img/promo.jpg" alt="">
                             </figure>
                         </div>
@@ -1027,13 +1225,14 @@
                     <p class="c-promo-bottom__title">
                         Earn a $25 Statement Credit
                     </p>
-                    <a class="c-promo-bottom__cta  c-cta-btn  c-cta-btn--red" href="/articles/culture-lifestyle/san-diego-comic-con-look-back-mcu-2020">
+                    <a class="c-promo-bottom__cta  c-cta-btn  c-cta-btn--red"
+                        href="/articles/culture-lifestyle/san-diego-comic-con-look-back-mcu-2020">
                         <div class="c-cta-btn__inner">
                             <span>Learn more</span>
                         </div>
                     </a>
                     <p class="c-promo-bottom__legal">
-                        Terms and Conditions Apply.  Ⓒ 2020 MARVEL
+                        Terms and Conditions Apply. Ⓒ 2020 MARVEL
                     </p>
                 </div>
             </div>
@@ -1049,12 +1248,18 @@
                 <div class="c-footer__links">
                     <a class="c-footer__logo" href="/">
                         <span class="c-footer__logo--svg" aria-hidden="true">
-                            <svg viewBox="0 0 36 52" xmlns="http://www.w3.org/2000/svg"><rect fill="#EC1D24" width="100%" height="100%"></rect><path fill="#FEFEFE" d="M31.5 48V4H21.291l-3.64 22.735L14.102 4H4v44h8V26.792L15.577 48h4.229l3.568-21.208V48z"></path></svg>
+                            <svg viewBox="0 0 36 52" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#EC1D24" width="100%" height="100%"></rect>
+                                <path fill="#FEFEFE"
+                                    d="M31.5 48V4H21.291l-3.64 22.735L14.102 4H4v44h8V26.792L15.577 48h4.229l3.568-21.208V48z">
+                                </path>
+                            </svg>
                         </span>
                     </a>
                     <nav class="c-footer__primary-links" aria-label="Primary footer navigtion">
                         <ul>
-                            <li class="c-footer__link"><a href="https://www.marvel.com/corporate/about">About Marvel</a></li>
+                            <li class="c-footer__link"><a href="https://www.marvel.com/corporate/about">About Marvel</a>
+                            </li>
                             <li class="c-footer__link"><a href="https://www.marvel.com/help">Help/FAQs</a></li>
                             <li class="c-footer__link"><a href="https://jobs.disneycareers.com/search-jobs?orgIds=391-1635-24091&amp;ascf=[{%22key%22:%22custom_fields%252EIndustryCustomField%22,%22value%22:%22Marvel%20Entertainment%22}]">Careers</a></li>
                             <li class="c-footer__link"><a href="https://www.marvel.com/corporate/interns">Internships</a></li>
@@ -1153,24 +1358,43 @@
                         </li>
                     </ul>
                 </nav>
-                
             </section>
 
             <div class="c-footer__legal">
                 <nav class="c-footer__legal__container" aria-label="Legal footer navigtion">
-                    <a class="c-footer__legal__link" target="_self" href="https://disneytermsofuse.com">Terms of Use</a>
-                    <a class="c-footer__legal__link" target="_self" href="https://privacy.thewaltdisneycompany.com/en">Privacy Policy</a>
-                    <a class="c-footer__legal__link" target="_self" href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/your-california-privacy-rights">Your California Privacy Rights</a>
-                    <a class="c-footer__legal__link" target="_self" href="https://privacy.thewaltdisneycompany.com/en/dnsmi/">Do Not Sell My Info</a>
-                    <a class="c-footer__legal__link" target="_self" href="https://privacy.thewaltdisneycompany.com/en/for-parents/childrens-online-privacy-policy">Children's Online Privacy Policy</a>
-                    <a class="c-footer__legal__link" target="_self" href="https://www.marvel.com/corporate/license_tou">License Agreement</a>
-                    <a class="c-footer__legal__link" target="_self" href="http://preferences-mgr.truste.com/?pid=disney01&amp;aid=marvel01&amp;type=marvel">Interest-Based Ads</a>
-                    <a class="c-footer__legal__link" target="_self" href="https://www.marvel.com/corporate/insider_terms">Marvel Insider Terms</a>
+                    <a class="c-footer__legal__link" target="_self" href="#">Terms of Use</a>
+                    <a class="c-footer__legal__link" target="_self" href="#">Privacy Policy</a>
+                    <a class="c-footer__legal__link" target="_self" href="#">Your California Privacy Rights</a>
+                    <a class="c-footer__legal__link" target="_self" href="#">Do Not Sell My Info</a>
+                    <a class="c-footer__legal__link" target="_self" href="#">Children's Online Privacy Policy</a>
+                    <a class="c-footer__legal__link" target="_self" href="#">License Agreement</a>
+                    <a class="c-footer__legal__link" target="_self" href="#">Interest-Based Ads</a>
+                    <a class="c-footer__legal__link" target="_self" href="#">Marvel Insider Terms</a>
 
                     <span class="c-footer__legal__text">©2020 MARVEL</span>
                 </nav>
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        const openNav = document.querySelector('.js-openNav');
+        const closeNav = document.querySelector('.js-closeNav');
+        const navMobile = document.querySelector('.js-navMobile');
+
+        function toogleNav() {
+            openNav.classList.toggle('is-open');
+            navMobile.classList.toggle('is-open');
+        }
+
+        openNav.addEventListener('click', event => {
+            toogleNav();
+        });
+
+        closeNav.addEventListener('click', event => {
+            toogleNav();
+        });
+
+    </script>
 </body>
 </html>
