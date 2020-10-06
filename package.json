@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sync": "browser-sync start --server --files \"**/*.css\" --no-open",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 --ci",
     "build-storybook": "build-storybook"
   },
   "repository": {
@@ -22,7 +22,10 @@
   "homepage": "https://github.com/CarlosMtz/marvel#readme",
   "devDependencies": {
     "@babel/core": "^7.11.0",
-    "@storybook/html": "^5.3.19",
+    "@storybook/addon-actions": "^6.0.22",
+    "@storybook/addon-essentials": "^6.0.22",
+    "@storybook/addon-links": "^6.0.22",
+    "@storybook/html": "^6.0.22",
     "babel-loader": "^8.1.0",
     "browser-sync": "^2.26.12"
   },
