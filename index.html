@@ -1492,6 +1492,19 @@
             toogleNav();
         });
 
+        const itemsNav = document.querySelectorAll('.js-itemNav').forEach(item => {
+
+            item.addEventListener('mouseover', () => {
+                item.classList.add('is-active');
+                item.querySelector('.js-submenu').classList.add('is-active');
+            })
+
+            item.addEventListener('mouseout', () => {
+                item.classList.remove('is-active');
+                item.querySelector('.js-submenu').classList.remove('is-active');
+            })
+        })
+
     </script>
 </body>
 </html>
