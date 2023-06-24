@@ -1064,7 +1064,7 @@
         </section>
 
         <section class="news">
-            <div class="news__container">
+            <div class="news__container container">
 
                 <div class="rail">
                     <div class="rail__container">
@@ -1304,6 +1304,87 @@
             </div>
         </section>
 
+        <my-paragraph></my-paragraph>
+        
+        <section class="player">
+            <div class="player__container container">
+                <div class="player__main">
+                    <div class="player__video">
+                        <iframe width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/u3V5KDHRQvk" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="play"></div>
+                </div>
+                <div class="playlist  scroll-style">
+                    <div class="video__item  active" 
+                        data-video="https://www.youtube.com/embed/u3V5KDHRQvk" 
+                        data-duration="1:20" 
+                        data-image="https://cdn.marvel.com/content/1x/poster_6324294860112_349ae6e600d2f45cd099c89441a2c9de_2.jpg"
+                        >
+                        <div class="video__image">
+                            <img src="https://cdn.marvel.com/content/1x/poster_6324294860112_349ae6e600d2f45cd099c89441a2c9de_2.jpg" alt="">
+                        </div>
+                        <div class="play"></div>
+                        <h5 class="video__title">Star-Lord's Top 5 Costumes!</h5>
+                    </div>
+                    <div class="video__item">
+                        <div class="video__image">
+                            <img src="https://cdn.marvel.com/content/1x/poster_6324294860112_349ae6e600d2f45cd099c89441a2c9de_2.jpg" alt="">
+                        </div>
+                        <div class="play"></div>
+                        <h5 class="video__title">Star-Lord's Top 5 Costumes!</h5>
+                    </div>
+                    <div class="video__item">
+                        <div class="video__image">
+                            <img src="https://cdn.marvel.com/content/1x/poster_6324294860112_349ae6e600d2f45cd099c89441a2c9de_2.jpg" alt="">
+                        </div>
+                        <div class="play"></div>
+                        <h5 class="video__title">Star-Lord's Top 5 Costumes!</h5>
+                    </div>
+                    <div class="video__item">
+                        <div class="video__image">
+                            <img src="https://cdn.marvel.com/content/1x/poster_6324294860112_349ae6e600d2f45cd099c89441a2c9de_2.jpg" alt="">
+                        </div>
+                        <div class="play"></div>
+                        <h5 class="video__title">Star-Lord's Top 5 Costumes!</h5>
+                    </div>
+                    <div class="video__item">
+                        <div class="video__image">
+                            <img src="https://cdn.marvel.com/content/1x/poster_6324294860112_349ae6e600d2f45cd099c89441a2c9de_2.jpg" alt="">
+                        </div>
+                        <div class="play"></div>
+                        <h5 class="video__title">Star-Lord's Top 5 Costumes!</h5>
+                    </div>
+                    <div class="video__item">
+                        <div class="video__image">
+                            <img src="https://cdn.marvel.com/content/1x/poster_6324294860112_349ae6e600d2f45cd099c89441a2c9de_2.jpg" alt="">
+                        </div>
+                        <div class="play"></div>
+                        <h5 class="video__title">Star-Lord's Top 5 Costumes!</h5>
+                    </div>
+                    <div class="video__item">
+                        <div class="video__image">
+                            <img src="https://cdn.marvel.com/content/1x/poster_6324294860112_349ae6e600d2f45cd099c89441a2c9de_2.jpg" alt="">
+                        </div>
+                        <div class="play"></div>
+                        <h5 class="video__title">Star-Lord's Top 5 Costumes!</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="player__content  container">
+                <h3 class="player__title">Star-Lord's Top 5 Costumes!</h3>
+                <p class="player__description">
+                    Count down five of Star-Lord's out-of-this-world comic outfits! Video Production by Wild Comet Media
+                </p>
+            </div>
+        </section>
+
         <section class="c-promo-bottom">
             <div class="c-promo-bottom__container">
                 <div class="c-promo-bottom__background">
@@ -1473,6 +1554,17 @@
             </div>
         </div>
     </footer>
+
+    <template id="my-paragraph">
+        <style>
+            p {
+            color: white;
+            background-color: #666;
+            padding: 5px;
+            }
+        </style>
+        <p>My paragraph</p>
+    </template>
 
     <script type="text/javascript">
         const openNav = document.querySelector('.js-openNav');
